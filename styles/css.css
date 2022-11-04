@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Kosugi&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap.min.css');
+
+html,
+body {
+    font-family: 'Kosugi', sans-serif;
+    height: 100%;
+}
+
+.bg {
+    background: rgb(23, 25, 40);
+    color: rgb(199, 183, 199);
+}
+
+.title {
+    font-size: 5vw;
+}
+
+.subtitle {
+    font-size: 1.5vw;
+    line-height: 0px;
+}
+
+.time {
+    font-size: 1vw;
+    line-height: 0vw;  
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 1vw;
+}
+
+.logos {
+    width: auto;
+    height: 3.5vw;
+    filter: invert(81%) sepia(9%) saturate(316%) hue-rotate(251deg) brightness(91%) contrast(93%);
+}
+
+a:link, a:visited, a:active {
+    color: rgb(199, 183, 199);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+
+a:hover {
+    text-decoration: underline;
+}
+
+.typed-out{
+    overflow: hidden;
+    border-right: .15em solid rgb(255, 255, 255);
+    white-space: nowrap;
+    animation: 
+      typing 1s forwards;
+    font-size: 1.6rem;
+    width: 0;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+

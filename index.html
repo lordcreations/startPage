@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles/css.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>startpage</title>
+
+
+    <script>
+        var visible = false;
+
+        window.addEventListener("keydown", function (e) {
+            if (e.keyCode === 114 || (e.ctrlKey && e.keyCode === 70)) {
+                e.preventDefault();
+                if (!visible) {
+                    document.getElementById('searchBar').style.opacity = 1;
+                    document.getElementById('spacingItems').style.paddingTop = '2vw';
+                    document.getElementById("search").focus()
+                    visible = true;
+                } else {
+                    document.getElementById('searchBar').style.opacity = 0;
+                    document.getElementById('spacingItems').style.paddingTop = '0vw';
+                    visible = false;
+                }
+            }
+        })
+
+
+
+        setTimeout(() => 
+        {
+            var localTime = new Date().toLocaleTimeString();
+            document.getElementById('time').innerText = localTime;
+        }, 100)
+    </script>
+
+</head>
+
+
+<body class="bg">
+    <div class="h-100 d-flex align-items-center justify-content-center" style="text-align: center;">
+        <div class="container-fluid">
+            <h1 style="text-align: center;" id="time" class="time"></h1>
+            <div class="row-gx0">
+                <div class="col col-12">
+                    <h1 class="subtitle">Welcome back!</h1>
+                    <h1 class="title">おかえり</h1>
+                    <div id="searchBar" class="d-flex justify-content-center"
+                        style="text-align: center;padding-top: 0vw;-webkit-transition: opacity 0.1s ease-in-out;-moz-transition: opacity 0.1s ease-in-out;transition: opacity 0.1s ease-in-out;">
+                        <label style="text-align: start">search@input:
+                            <input id="search" autofocus
+                                style="width: 50vw; height: 2vw;background-color: transparent;color: white; text-align: start;"
+                                class="form-control shadow-none d-flex justify-content-center">
+                    </div>
+                </div>
+            </div>
+            <div class="row-gx0 no-gutters">
+                <div class="d-flex justify-content-center">
+                    <div id="spacingItems" style="height: 10vw;width: 50vw;padding-top: 2vw;">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="d-flex">
+                                <img class="logos" src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                                    alt="GitHub">
+                                <ul class="d-grid align-content-center">
+                                    <li>
+                                        <a href="https://github.com/lordcreations">
+                                            /lordcreations
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/lordcreations/league-client">
+                                            /league-client
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/lordcreations?tab=repositories">
+                                            /my-repos
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="d-flex">
+                                <img class="logos" src="https://cdn-icons-png.flaticon.com/512/81/81609.png"
+                                    alt="Twitter">
+                                <ul class="d-grid align-content-center">
+                                    <li>
+                                        <a href="https://twitter.com/home">
+                                            /homepage
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/explore/tabs/for-you">
+                                            /trending
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="d-flex">
+                                <img class="logos" src="https://cdn-icons-png.flaticon.com/512/152/152810.png"
+                                    alt="Youtube">
+                                <ul class="d-grid align-content-center">
+                                    <li>
+                                        <a href="https://www.youtube.com">
+                                            /homepage
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.youtube.com/user/HDGamerDragon/playlists">
+                                            /playlists
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="d-flex">
+                                <img class="logos" src="https://cdn.icon-icons.com/icons2/2389/PNG/512/crunchyroll_logo_icon_145360.png"
+                                    alt="GitHub">
+                                <ul class="d-grid align-content-center">
+                                    <li>
+                                        <a href="https://www.crunchyroll.com/pt-br/">
+                                            /homepage
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.crunchyroll.com/pt-br/videos/popular">
+                                            /popular
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.crunchyroll.com/pt-br/videos/new">
+                                            /new
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
