@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kosugi&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 html,
 body {
@@ -62,3 +63,7 @@ a:hover {
   }
 
 
+#search {
+    font-family: 'Poppins', sans-serif;
+    word-spacing: 1px;
+}
