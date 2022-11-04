@@ -43,27 +43,6 @@ a:link, a:visited, a:active {
     text-decoration: none;
 }
 
-
 a:hover {
     text-decoration: underline;
-}
-
-.typed-out{
-    overflow: hidden;
-    border-right: .15em solid rgb(255, 255, 255);
-    white-space: nowrap;
-    animation: 
-      typing 1s forwards;
-    font-size: 1.6rem;
-    width: 0;
-  }
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-
-
-#search {
-    font-family: 'Poppins', sans-serif;
-    word-spacing: 1px;
 }
